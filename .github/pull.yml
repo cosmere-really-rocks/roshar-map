@@ -4,5 +4,8 @@ rules: # Array of rules
     upstream: Palanaeum:master # Required. Must be in the same fork network.
     mergeMethod: merge # Optional, one of [none, merge, squash, rebase, hardreset], Default: none.
     mergeUnstable: false # Optional, merge pull request even when the mergeable_state is not clean. Default: false
+  - base: chinese-translation-auto-deploy # Required. Target branch
+    upstream: chinese-translation # Required. Can be a branch in the same forked repo.
+    mergeMethod: squash
 label: ":arrow_heading_down: pull" # Optional
 conflictLabel: "merge-conflict" # Optional, on merge conflict assign a custom label, Default: merge-conflict
