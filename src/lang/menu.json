@@ -1,0 +1,14 @@
+[
+    {
+        "code": "en-US",
+        "name": "English"
+    },
+    {
+        "code": "es-ES",
+        "name": "Español"
+    },
+    {
+        "code": "zh",
+        "name": "中文"
+    }
+]
