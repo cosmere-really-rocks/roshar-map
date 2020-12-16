@@ -37,7 +37,7 @@ jobs:
           VUE_APP_PUBLIC_URL: ./
           VUE_APP_GA_ID: ${{ secrets.GA_ID }}
         with:
-          cmd: build
+          cmd: build:dev
       # - name: Create CNAME
       #   uses: finnp/create-file-action@master
       #   env:
