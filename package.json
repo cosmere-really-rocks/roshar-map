@@ -5,7 +5,7 @@
   "scripts": {
     "serve": "cross-env MAP_DEBUG=true vue-cli-service serve --port 10010 src/dev.js",
     "build": "vue-cli-service build --dest dist/release src/main.js",
-    "build:dev": "cross-env MAP_DEBUG=true vue-cli-service build --dest dist/dev --skip-plugins pwa,workbox src/dev.js",
+    "build:dev": "cross-env MAP_DEBUG=true vue-cli-service build --dest dist/release --skip-plugins pwa,workbox src/dev.js",
     "lint": "vue-cli-service lint",
     "dumpTranslations": "node ./bin/dump-translations.js",
     "validateTranslations": "node ./bin/validate-translations.js",
