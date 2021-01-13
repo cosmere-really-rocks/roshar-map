@@ -2,6 +2,7 @@ const path = require('path')
 
 module.exports = {
   productionSourceMap: false,
+  publicPath: process.env.VUE_APP_PUBLIC_URL,
   chainWebpack: (config) => {
     config.resolveLoader
       .modules
