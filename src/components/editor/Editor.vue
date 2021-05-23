@@ -1215,6 +1215,10 @@ export default {
     }
   }
 
+  input[type=file] {
+    pointer-events: auto;
+  }
+
   &__menu {
     position: fixed;
     top: 0;
