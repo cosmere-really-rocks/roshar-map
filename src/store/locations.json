@@ -751,6 +751,7 @@
         },
         "related": [
             "characters/taravangian",
+            "events/creation-of-the-diagram",
             "events/shallan-becomes-jasnahs-ward",
             "events/shallan-confronts-jasnah",
             "events/shallan-visits-shadesmar",
@@ -1525,7 +1526,8 @@
         },
         "coppermind": "Aimia",
         "related": [
-            "events/scouring-of-aimia"
+            "events/scouring-of-aimia",
+            "events/wandersail-arrival"
         ]
     },
     {
@@ -2414,11 +2416,26 @@
         "coppermind": "Urithiru",
         "related": [
             "characters/dalinar",
+            "events/coalition-convenes",
+            "events/diagram-disbands",
+            "events/dog-and-dragon",
             "events/first-meeting-of-monarchs",
             "events/founding-of-the-knights-radiant-and-urithiru",
+            "events/fourth-bridge-arrival",
+            "events/kaladin-helps-noril",
+            "events/kaladin-promoted",
+            "events/navani-creates-antilight",
+            "events/navanis-tone-discovery",
             "events/re-shephir-driven-from-urithiru",
+            "events/second-node-destroyed",
+            "events/shadesmar-envoy-departs",
             "events/taravangian-arrives-in-urithiru",
-            "events/urithiru-rediscovered"
+            "events/third-node-destroyed",
+            "events/urithiru-captured",
+            "events/urithiru-liberated",
+            "events/urithiru-rediscovered",
+            "events/venli-frees-rlain",
+            "events/warlight-discovered"
         ]
     },
     {
@@ -2583,11 +2600,19 @@
         "related": [
             "events/battle-of-the-tower",
             "events/disadvantaged-duel",
+            "events/eshonai-is-born",
+            "events/ialai-assassinated",
             "events/kaladin-joins-bridge-four",
+            "events/listeners-reunited",
             "events/shallan-and-kaladin-in-the-chasms",
             "events/shallan-meets-ghostbloods",
+            "events/shallan-undercover",
             "events/szeth-attacks-dalinar",
             "events/the-last-legion",
+            "events/the-parshendi-discovered",
+            "events/venli-is-born",
+            "events/venli-meets-ulim",
+            "events/wit-meets-odium",
             "locations/narak"
         ]
     },
@@ -2856,7 +2881,15 @@
         },
         "coppermind": "Emul",
         "related": [
+            "events/dalinar-meets-odium",
+            "events/dalinar-visits-taravangian",
+            "events/end-of-emul-campaign",
+            "events/lurnip-famine",
+            "events/ruthar-replaced",
+            "events/taravangian-ascends",
+            "events/taravangians-treachery",
             "events/the-eightys-war",
+            "events/war-in-emul",
             "locations/sesemalex-dar"
         ]
     },
@@ -3043,6 +3076,7 @@
         },
         "coppermind": "Tukar",
         "related": [
+            "events/dalinar-meets-ishar",
             "events/the-eightys-war",
             "locations/sesemalex-dar"
         ]
@@ -4091,6 +4125,7 @@
             "events/shallan-attends-the-revel",
             "events/taln-arrives-in-kholinar",
             "events/trapped-in-shadesmar",
+            "events/raboniel-arrives",
             "locations/alethkar"
         ],
         "image": {
@@ -4214,6 +4249,10 @@
             ]
         },
         "coppermind": "Rathalas",
+        "image": {
+            "file": "locations/Rathalas_by_Connor_Chamberlain.jpg",
+            "credits": "[Marie Seeberger](https://coppermind.net/wiki/Coppermind:Artists/Marie_Seeberger)"
+        },
         "related": [
             "events/dalinar-wins-oathbringer",
             "events/return-to-the-rift",
@@ -4491,8 +4530,10 @@
         },
         "coppermind": "Thaylen_City",
         "related": [
+            "events/kings-drop-in-reserve",
             "events/oathgate-to-thaylen-city-opened",
             "events/the-battle-of-thaylen-field",
+            "events/wandersail-departure",
             "locations/thaylenah"
         ]
     },
@@ -4672,8 +4713,7 @@
         },
         "related": [
             "characters/cultivation",
-            "events/dalinar-visits-the-nightwatcher",
-            "events/taravangian-visits-the-nightwatcher"
+            "events/dalinar-visits-the-nightwatcher"
         ]
     },
     {
@@ -4792,12 +4832,12 @@
         },
         "coppermind": "Narak",
         "related": [
-            "characters/eshonai",
-            "characters/venli",
             "events/battle-of-narak-and-the-everstorm",
             "events/bridge-four-begins-training-squires",
             "events/eshonai-adopts-stormform",
             "events/eshonai-seizes-control",
+            "events/fourth-bridge-arrival",
+            "events/fourth-bridge-departure",
             "locations/shattered-plains"
         ]
     },
@@ -4895,6 +4935,15 @@
             ]
         },
         "coppermind": "Hearthstone",
+        "image": {
+            "file": "events/Thepathtohearthstone.png",
+            "credits": "[Ashley Coad](https://coppermind.net/wiki/Coppermind:Artists/Ashley_Coad)",
+            "size": 250,
+            "offset": {
+                "x": 10,
+                "y": 50
+            }
+        },
         "related": [
             "characters/kaladin",
             "events/kaladin-begins-training",
@@ -4904,6 +4953,7 @@
             "events/oroden-is-born",
             "events/roshone-arrives-in-hearthstone",
             "events/wistiow-dies",
+            "events/hearthstone-evacuated",
             "locations/alethkar"
         ]
     },
@@ -6501,6 +6551,10 @@
             ]
         },
         "coppermind": "Unclaimed_Hills",
+        "image": {
+            "file": "locations/The_Unclaimed_Hills_by_Marie_Seeberger.jpg",
+            "credits": "[Marie Seeberger](https://coppermind.net/wiki/Coppermind:Artists/Marie_Seeberger)"
+        },
         "related": [
             "events/jasnah-returns-from-shadesmar"
         ]
@@ -7048,6 +7102,15 @@
             ]
         },
         "coppermind": "Reshi_Sea",
+        "image": {
+            "file": "events/Tan-na_by_Marie_Seeberger.jpg",
+            "credits": "[Marie Seeberger](https://coppermind.net/wiki/Coppermind:Artists/Marie_Seeberger)",
+            "size": 200,
+            "offset": {
+                "x": 70,
+                "y": 0
+            }
+        },
         "related": [
             "events/rysn-in-the-reshi-isles"
         ]
@@ -7162,6 +7225,15 @@
             ]
         },
         "coppermind": "Reshi_Sea",
+        "image": {
+            "file": "events/Tan-na_by_Marie_Seeberger.jpg",
+            "credits": "[Marie Seeberger](https://coppermind.net/wiki/Coppermind:Artists/Marie_Seeberger)",
+            "size": 200,
+            "offset": {
+                "x": 70,
+                "y": 0
+            }
+        },
         "related": [
             "events/rysn-in-the-reshi-isles"
         ]
@@ -7788,7 +7860,10 @@
                 }
             ]
         },
-        "coppermind": "Southern_Depths"
+        "coppermind": "Southern_Depths",
+        "related": [
+            "events/first-dreams-discovered"
+        ]
     },
     {
         "id": "tarat-sea",
@@ -11860,6 +11935,7 @@
             ]
         },
         "related": [
+            "events/bayala-dynastic-collapse",
             "locations/ru-parat"
         ],
         "coppermind": "Tu_Bayla"
@@ -12843,43 +12919,43 @@
             ]
         },
         "image": {
-            "file": "locations/Honor's_Path_Kyle_Pearson.jpg",
-            "credits": "[Kyle Pearson](https://coppermind.net/wiki/Coppermind:Artists/Kyle_Pearson)"
+            "file": "locations/Over_the_sea_of_spheres_by_Zamoraalma.png",
+            "credits": "[Zamoraalma](https://www.artstation.com/Zamoraalma)"
         },
         "coppermind": "Sea_of_Regret"
     },
     {
         "id": "sea-of-souls",
         "coordinates": {
-            "x": 517.7,
-            "y": 311
+            "x": 506.5,
+            "y": 328.5
         },
         "mapId": 85,
         "points": {
             "en": [
                 {
-                    "x": 476.1456582633053,
-                    "y": 313.0935251798561
+                    "x": 465.73007103393843,
+                    "y": 330.2036306235201
                 },
                 {
-                    "x": 518.5562224889956,
-                    "y": 303.27098321342925
+                    "x": 512.9092344119969,
+                    "y": 320
                 },
                 {
-                    "x": 555.6398559423769,
-                    "y": 303.8848920863309
+                    "x": 543.4191002367797,
+                    "y": 321.5153906866614
                 },
                 {
-                    "x": 555.6398559423769,
-                    "y": 316.36770583533166
+                    "x": 542.6108918705604,
+                    "y": 332.3251775848461
                 },
                 {
-                    "x": 518.9659863945578,
-                    "y": 318.0047961630695
+                    "x": 508.5333333333333,
+                    "y": 333.6
                 },
                 {
-                    "x": 480.0384153661464,
-                    "y": 327.2134292565947
+                    "x": 469.2659826361484,
+                    "y": 343.2359905288082
                 }
             ],
             "es": [
@@ -12971,8 +13047,13 @@
         },
         "shadesmar": true,
         "image": {
-            "file": "locations/Honor's_Path_Kyle_Pearson.jpg",
-            "credits": "[Kyle Pearson](https://coppermind.net/wiki/Coppermind:Artists/Kyle_Pearson)"
+            "file": "locations/Sea_of_Souls.jpg",
+            "credits": "[Isaac Stewart](https://coppermind.net/wiki/Coppermind:Artists/Isaac_Stewart)",
+            "size": 150,
+            "offset": {
+                "x": 50,
+                "y": 50
+            }
         },
         "coppermind": "Sea_of_Souls"
     },
@@ -12986,28 +13067,28 @@
         "points": {
             "en": [
                 {
-                    "x": 620.484993997599,
-                    "y": 247.09832134292563
+                    "x": 624.0378847671666,
+                    "y": 244.4325177584846
                 },
                 {
-                    "x": 672.7298919567827,
-                    "y": 258.14868105515586
+                    "x": 674.6519337016574,
+                    "y": 254.939226519337
                 },
                 {
-                    "x": 729.2773109243697,
-                    "y": 264.28776978417267
+                    "x": 731.6306235201263,
+                    "y": 262.41515390686664
                 },
                 {
-                    "x": 730.5066026410564,
-                    "y": 278.1007194244604
+                    "x": 731.8326756116811,
+                    "y": 274.4372533543804
                 },
                 {
-                    "x": 671.1932773109244,
-                    "y": 272.26858513189444
+                    "x": 672.0252565114444,
+                    "y": 268.27466456195737
                 },
                 {
-                    "x": 615.5678271308523,
-                    "y": 259.9904076738609
+                    "x": 618.2794001578532,
+                    "y": 257.060773480663
                 }
             ],
             "es": [
@@ -14391,20 +14472,20 @@
         "points": {
             "en": [
                 {
-                    "x": 704.1,
-                    "y": 316.3
+                    "x": 709.1018153117601,
+                    "y": 315.2517758484609
                 },
                 {
-                    "x": 734.1,
-                    "y": 316.2
+                    "x": 740.4198895027624,
+                    "y": 315.2517758484609
                 },
                 {
-                    "x": 735.2,
-                    "y": 326.9
+                    "x": 740.6219415943173,
+                    "y": 324.6471981057616
                 },
                 {
-                    "x": 702.2,
-                    "y": 326.7
+                    "x": 709.6069455406472,
+                    "y": 325.15232833464876
                 }
             ],
             "es": [
@@ -14499,5 +14580,534 @@
         "related": [
             "events/stop-in-celebrant"
         ]
+    },
+    {
+        "id": "nameless",
+        "coordinates": {
+            "x": 453.2,
+            "y": 382.8
+        },
+        "mapId": 95,
+        "points": {
+            "en": [
+                {
+                    "x": 480.5808997632202,
+                    "y": 384.353591160221
+                },
+                {
+                    "x": 451.8666666666667,
+                    "y": 383.8666666666667
+                },
+                {
+                    "x": 450.3741120757695,
+                    "y": 374.9581689029203
+                },
+                {
+                    "x": 480.85333333333335,
+                    "y": 375.04
+                }
+            ],
+            "es": [
+                {
+                    "x": 446.93333333333334,
+                    "y": 373.3333333333333
+                },
+                {
+                    "x": 449.77777777777777,
+                    "y": 387.91111111111115
+                },
+                {
+                    "x": 486.93333333333334,
+                    "y": 386.6666666666667
+                },
+                {
+                    "x": 486.0444444444445,
+                    "y": 372.62222222222226
+                }
+            ],
+            "ru": [
+                {
+                    "x": 448,
+                    "y": 372.8
+                },
+                {
+                    "x": 483.55555555555554,
+                    "y": 373.15555555555557
+                },
+                {
+                    "x": 484.6222222222222,
+                    "y": 384.71111111111105
+                },
+                {
+                    "x": 447.11111111111114,
+                    "y": 386.3111111111111
+                }
+            ],
+            "zh": [
+                {
+                    "x": 445.68888888888887,
+                    "y": 371.73333333333335
+                },
+                {
+                    "x": 471.28888888888883,
+                    "y": 372.26666666666665
+                },
+                {
+                    "x": 475.73333333333335,
+                    "y": 385.6
+                },
+                {
+                    "x": 448.1777777777778,
+                    "y": 386.1333333333333
+                }
+            ]
+        },
+        "shadesmar": true,
+        "coppermind": "Nameless",
+        "related": [
+            "events/nameless-arrival"
+        ]
+    },
+    {
+        "id": "nohadons-stairways",
+        "coordinates": {
+            "x": 485.9,
+            "y": 317.5
+        },
+        "mapId": 96,
+        "points": {
+            "en": [
+                {
+                    "x": 536.7513812154696,
+                    "y": 308.17995264404107
+                },
+                {
+                    "x": 536.7513812154696,
+                    "y": 318.585635359116
+                },
+                {
+                    "x": 476.33780584056825,
+                    "y": 318.9897395422257
+                },
+                {
+                    "x": 476.53985793212314,
+                    "y": 307.9779005524862
+                }
+            ],
+            "es": [
+                {
+                    "x": 488.88888888888886,
+                    "y": 294.7555555555556
+                },
+                {
+                    "x": 481.59999999999997,
+                    "y": 307.5555555555556
+                },
+                {
+                    "x": 511.11111111111114,
+                    "y": 303.46666666666664
+                },
+                {
+                    "x": 504.88888888888886,
+                    "y": 294.93333333333334
+                }
+            ],
+            "ru": [
+                {
+                    "x": 483.3777777777778,
+                    "y": 292.8
+                },
+                {
+                    "x": 485.68888888888887,
+                    "y": 303.1111111111111
+                },
+                {
+                    "x": 500.6222222222222,
+                    "y": 299.37777777777774
+                },
+                {
+                    "x": 499.55555555555554,
+                    "y": 291.2
+                }
+            ],
+            "zh": [
+                {
+                    "x": 472.35555555555555,
+                    "y": 300.0888888888889
+                },
+                {
+                    "x": 476.44444444444446,
+                    "y": 310.93333333333334
+                },
+                {
+                    "x": 487.11111111111114,
+                    "y": 309.8666666666667
+                },
+                {
+                    "x": 489.24444444444447,
+                    "y": 298.1333333333333
+                }
+            ]
+        },
+        "shadesmar": true,
+        "coppermind": "Nohadon's Staircases",
+        "related": [
+            "events/shadesmar-envoy-departs"
+        ]
+    },
+    {
+        "id": "lasting-integrity",
+        "coordinates": {
+            "x": 407.5,
+            "y": 391.1
+        },
+        "mapId": 97,
+        "points": {
+            "en": [
+                {
+                    "x": 405.7879505393318,
+                    "y": 391.74533017626936
+                },
+                {
+                    "x": 405.6532491449618,
+                    "y": 401.4438305709024
+                },
+                {
+                    "x": 454.8192580899763,
+                    "y": 403.46435148645094
+                },
+                {
+                    "x": 455.223362273086,
+                    "y": 392.284135753749
+                }
+            ],
+            "es": [
+                {
+                    "x": 375.11111111111114,
+                    "y": 392.5333333333333
+                },
+                {
+                    "x": 412.9777777777778,
+                    "y": 398.5777777777778
+                },
+                {
+                    "x": 414.4,
+                    "y": 382.0444444444445
+                },
+                {
+                    "x": 380.9777777777778,
+                    "y": 379.73333333333335
+                }
+            ],
+            "ru": [
+                {
+                    "x": 376.5333333333333,
+                    "y": 381.15555555555557
+                },
+                {
+                    "x": 419.9111111111111,
+                    "y": 384
+                },
+                {
+                    "x": 416.7111111111111,
+                    "y": 397.5111111111111
+                },
+                {
+                    "x": 369.06666666666666,
+                    "y": 392.5333333333333
+                }
+            ],
+            "zh": [
+                {
+                    "x": 375.46666666666664,
+                    "y": 379.55555555555554
+                },
+                {
+                    "x": 417.9555555555555,
+                    "y": 382.2222222222222
+                },
+                {
+                    "x": 413.3333333333333,
+                    "y": 402.1333333333333
+                },
+                {
+                    "x": 370.84444444444443,
+                    "y": 391.46666666666664
+                }
+            ]
+        },
+        "shadesmar": true,
+        "coppermind": "Lasting Integrity",
+        "related": [
+            "events/adolin-murders-sadeas",
+            "events/adolin-trial-day-1",
+            "events/adolin-trial-day-2",
+            "events/adolin-trial-day-3",
+            "events/azure-leaves-lasting-integrity",
+            "events/lasting-integrity-arrival",
+            "events/shallan-leaves-ghostbloods",
+            "events/veil-reintegrated"
+        ],
+        "image": {
+            "file": "locations/Lasting_Integrity_US_Cover_Crop.jpg",
+            "credits": "[Michael Whelan](https://coppermind.net/wiki/Coppermind:Artists/Michael_Whelan)",
+            "size": 150,
+            "offset": {
+                "x": 50,
+                "y": 50
+            }
+        }
+    },
+    {
+        "id": "astral-banks",
+        "coordinates": {
+            "x": 200,
+            "y": 200
+        },
+        "shadesmar": true,
+        "mapId": 98,
+        "image": {
+            "file": "locations/Over_the_sea_of_spheres_by_Zamoraalma.png",
+            "credits": "[Zamoraalma](https://www.artstation.com/Zamoraalma)"
+        },
+        "coppermind": "Astral Banks"
+    },
+    {
+        "id": "empyrean-gulf",
+        "coordinates": {
+            "x": 200,
+            "y": 200
+        },
+        "shadesmar": true,
+        "mapId": 99,
+        "image": {
+            "file": "locations/Over_the_sea_of_spheres_by_Zamoraalma.png",
+            "credits": "[Zamoraalma](https://www.artstation.com/Zamoraalma)"
+        },
+        "coppermind": "Empyrean Gulf"
+    },
+    {
+        "id": "radiant-depths",
+        "coordinates": {
+            "x": 200,
+            "y": 200
+        },
+        "shadesmar": true,
+        "mapId": 100,
+        "image": {
+            "file": "locations/Over_the_sea_of_spheres_by_Zamoraalma.png",
+            "credits": "[Zamoraalma](https://www.artstation.com/Zamoraalma)"
+        },
+        "coppermind": "Radiant Depths"
+    },
+    {
+        "id": "basin-of-the-veiled-sun",
+        "coordinates": {
+            "x": 200,
+            "y": 200
+        },
+        "shadesmar": true,
+        "mapId": 101,
+        "image": {
+            "file": "locations/Over_the_sea_of_spheres_by_Zamoraalma.png",
+            "credits": "[Zamoraalma](https://www.artstation.com/Zamoraalma)"
+        },
+        "coppermind": "Basin of the Veiled Sun"
+    },
+    {
+        "id": "glasswater-deep",
+        "coordinates": {
+            "x": 200,
+            "y": 200
+        },
+        "shadesmar": true,
+        "mapId": 102,
+        "image": {
+            "file": "locations/Over_the_sea_of_spheres_by_Zamoraalma.png",
+            "credits": "[Zamoraalma](https://www.artstation.com/Zamoraalma)"
+        },
+        "coppermind": "Glasswater Deep"
+    },
+    {
+        "id": "salavashi-trench",
+        "coordinates": {
+            "x": 200,
+            "y": 200
+        },
+        "shadesmar": true,
+        "mapId": 103,
+        "image": {
+            "file": "locations/Over_the_sea_of_spheres_by_Zamoraalma.png",
+            "credits": "[Zamoraalma](https://www.artstation.com/Zamoraalma)"
+        },
+        "coppermind": "Salavashi Trench"
+    },
+    {
+        "id": "luminous-shadows",
+        "coordinates": {
+            "x": 200,
+            "y": 200
+        },
+        "shadesmar": true,
+        "mapId": 104,
+        "image": {
+            "file": "locations/Over_the_sea_of_spheres_by_Zamoraalma.png",
+            "credits": "[Zamoraalma](https://www.artstation.com/Zamoraalma)"
+        },
+        "coppermind": "Luminous Shadows"
+    },
+    {
+        "id": "thaylen-sea",
+        "coordinates": {
+            "x": 200,
+            "y": 200
+        },
+        "shadesmar": true,
+        "mapId": 105,
+        "image": {
+            "file": "locations/Over_the_sea_of_spheres_by_Zamoraalma.png",
+            "credits": "[Zamoraalma](https://www.artstation.com/Zamoraalma)"
+        },
+        "coppermind": "Thaylen Sea"
+    },
+    {
+        "id": "sea-of-oracles",
+        "coordinates": {
+            "x": 200,
+            "y": 200
+        },
+        "shadesmar": true,
+        "mapId": 106,
+        "image": {
+            "file": "locations/Over_the_sea_of_spheres_by_Zamoraalma.png",
+            "credits": "[Zamoraalma](https://www.artstation.com/Zamoraalma)"
+        },
+        "coppermind": "Sea of Oracles"
+    },
+    {
+        "id": "sea-of-oracles",
+        "coordinates": {
+            "x": 200,
+            "y": 200
+        },
+        "shadesmar": true,
+        "mapId": 106,
+        "image": {
+            "file": "locations/Over_the_sea_of_spheres_by_Zamoraalma.png",
+            "credits": "[Zamoraalma](https://www.artstation.com/Zamoraalma)"
+        },
+        "coppermind": "Sea of Oracles"
+    },
+    {
+        "id": "kholinar-oathgate",
+        "coordinates": {
+            "x": 210,
+            "y": 210
+        },
+        "mapId": 107,
+        "shadesmar": true,
+        "coppermind": "Oathgate",
+        "image": {
+            "file": "events/Oathgate_by_Artem_Demura.png",
+            "credits": "[Artem Demura](https://coppermind.net/wiki/Coppermind:Artists/Artem_Demura)"
+        }
+    },
+    {
+        "id": "narak-oathgate",
+        "coordinates": {
+            "x": 210,
+            "y": 210
+        },
+        "mapId": 108,
+        "shadesmar": true,
+        "coppermind": "Oathgate",
+        "image": {
+            "file": "events/Oathgate_by_Artem_Demura.png",
+            "credits": "[Artem Demura](https://coppermind.net/wiki/Coppermind:Artists/Artem_Demura)"
+        }
+    },
+    {
+        "id": "thaylen-city-oathgate",
+        "coordinates": {
+            "x": 210,
+            "y": 210
+        },
+        "mapId": 109,
+        "shadesmar": true,
+        "coppermind": "Oathgate",
+        "image": {
+            "file": "events/Oathgate_by_Artem_Demura.png",
+            "credits": "[Artem Demura](https://coppermind.net/wiki/Coppermind:Artists/Artem_Demura)"
+        }
+    },
+    {
+        "id": "vedenar-oathgate",
+        "coordinates": {
+            "x": 210,
+            "y": 210
+        },
+        "mapId": 110,
+        "shadesmar": true,
+        "coppermind": "Oathgate",
+        "image": {
+            "file": "events/Oathgate_by_Artem_Demura.png",
+            "credits": "[Artem Demura](https://coppermind.net/wiki/Coppermind:Artists/Artem_Demura)"
+        }
+    },
+    {
+        "id": "azimir-oathgate",
+        "coordinates": {
+            "x": 210,
+            "y": 210
+        },
+        "mapId": 111,
+        "shadesmar": true,
+        "coppermind": "Oathgate",
+        "image": {
+            "file": "events/Oathgate_by_Artem_Demura.png",
+            "credits": "[Artem Demura](https://coppermind.net/wiki/Coppermind:Artists/Artem_Demura)"
+        }
+    },
+    {
+        "id": "panatham-oathgate",
+        "coordinates": {
+            "x": 210,
+            "y": 210
+        },
+        "mapId": 112,
+        "shadesmar": true,
+        "coppermind": "Oathgate",
+        "image": {
+            "file": "events/Oathgate_by_Artem_Demura.png",
+            "credits": "[Artem Demura](https://coppermind.net/wiki/Coppermind:Artists/Artem_Demura)"
+        }
+    },
+    {
+        "id": "kurth-oathgate",
+        "coordinates": {
+            "x": 210,
+            "y": 210
+        },
+        "mapId": 113,
+        "shadesmar": true,
+        "coppermind": "Oathgate",
+        "image": {
+            "file": "events/Oathgate_by_Artem_Demura.png",
+            "credits": "[Artem Demura](https://coppermind.net/wiki/Coppermind:Artists/Artem_Demura)"
+        }
+    },
+    {
+        "id": "rall-elorim-oathgate",
+        "coordinates": {
+            "x": 210,
+            "y": 210
+        },
+        "mapId": 114,
+        "shadesmar": true,
+        "coppermind": "Oathgate",
+        "image": {
+            "file": "events/Oathgate_by_Artem_Demura.png",
+            "credits": "[Artem Demura](https://coppermind.net/wiki/Coppermind:Artists/Artem_Demura)"
+        }
     }
 ]

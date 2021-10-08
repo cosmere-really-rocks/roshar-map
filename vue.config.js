@@ -1,9 +1,18 @@
 const path = require('path')
+const WarningsToErrorsPlugin = require('warnings-to-errors-webpack-plugin')
 
 module.exports = {
   productionSourceMap: false,
   publicPath: process.env.VUE_APP_PUBLIC_URL,
+  configureWebpack: {
+    optimization: {
+      noEmitOnErrors: true,
+    }
+  },
   chainWebpack: (config) => {
+    config.plugin('warnings-to-errors')
+      .use(WarningsToErrorsPlugin)
+
     config.resolveLoader
       .modules
       .add(path.resolve(__dirname, 'build/loaders'))
@@ -34,14 +43,21 @@ module.exports = {
         .resourceQuery(/srcset/)
         .use('cache')
         .loader('cache-loader')
+        .options({
+          cacheIdentifier: 'min-width'
+        })
         .end()
         .use('srcset')
         .loader('webpack-image-srcset-loader')
         .options({
-          sizes: ['1x', '2x'],
+          sizes: ['500w', '1000w'],
           esModule: false,
           scaleUp: false
         })
+        .end()
+        .use('min-size')
+        .loader(path.resolve('build/loaders/image-min-size-loader.js'))
+        .options({ minWidth: 500 })
 
       config.module
         .rule('images-resize')
@@ -53,11 +69,15 @@ module.exports = {
         .end()
         .use('resize')
         .loader('webpack-image-resize-loader')
-        .end()
-        .use('max-size')
-        .loader(path.resolve('build/loaders/image-max-size-loader.js'))
-        .options({ maxWidth: 1000 })
     } else {
+      config.module
+        .rule('validate-images')
+        .resourceQuery(/srcset/)
+        .pre()
+        .use('min-size')
+        .loader(path.resolve('build/loaders/image-min-size-loader.js'))
+        .options({ minWidth: 500 })
+
       config.module
         .rule('images')
         .oneOf('srcset')
@@ -67,7 +87,7 @@ module.exports = {
         .options({
           context: './src/assets',
           name: 'img/[path][name].[hash:8].[ext]',
-          postTransformPublicPath: p => `${p} + ' 1x'`
+          postTransformPublicPath: p => `${p} + ' 500w'`
         })
         .end()
         .end()
