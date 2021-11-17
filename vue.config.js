@@ -6,7 +6,7 @@ module.exports = {
   publicPath: process.env.VUE_APP_PUBLIC_URL,
   configureWebpack: {
     optimization: {
-      noEmitOnErrors: true,
+      noEmitOnErrors: true
     }
   },
   chainWebpack: (config) => {
