@@ -41,12 +41,13 @@ jobs:
         run: yarn build
         env:
           VUE_APP_PUBLIC_URL: ./
-          VUE_APP_GA_ID: ${{ secrets.GA_ID }}
-      - name: Create CNAME
-        uses: finnp/create-file-action@master
-        env:
-          FILE_NAME: "./dist/release/CNAME"
-          FILE_DATA: "roshar.17thshard.com"
+          # VUE_APP_GA_ID: ${{ secrets.GA_ID }} // disabled google analytics for chinese translation branch
+      # disabled CNAME for chinese translation branch
+      # - name: Create CNAME
+      #   uses: finnp/create-file-action@master
+      #   env:
+      #     FILE_NAME: "./dist/release/CNAME"
+      #     FILE_DATA: "roshar.17thshard.com"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3.0.1
         with:
