@@ -3,6 +3,7 @@ const WarningsToErrorsPlugin = require('warnings-to-errors-webpack-plugin')
 
 module.exports = {
   productionSourceMap: false,
+  publicPath: process.env.VUE_APP_PUBLIC_URL,
   configureWebpack: {
     optimization: {
       noEmitOnErrors: true
