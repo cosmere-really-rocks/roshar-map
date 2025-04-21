@@ -9,6 +9,8 @@
       }
     ]"
     :style="{ '--max-height': `${contentHeight}px` }"
+    @keyup.arrow-left="gotoEvent(-1)"
+    @keyup.arrow-right="gotoEvent(1)"
   >
     <transition name="event-card">
       <EventCard v-if="activeEvent !== null" :key="`event-${activeEvent.id}`" :event="activeEvent" />
@@ -148,7 +150,7 @@
       data-tutorial-id="go-to-date-button"
       class="scrubber__jump scrubber__jump--date"
       :title="$t('ui.go-to-date.heading')"
-      @click="$store.commit('openGoToDate')"
+      @click="openGoToDate"
     >
       <CalendarIcon size="1x" />
     </button>
@@ -156,7 +158,7 @@
       data-tutorial-id="measure-button"
       :class="['scrubber__button', 'scrubber__button--measure', { 'scrubber__button--measure-active': $store.state.measurementActive }]"
       :title="$t('ui.measurement.button')"
-      @click="$store.commit('toggleMeasurement')"
+      @click="toggleMeasurement"
     >
       <CompassIcon size="1x" />
     </button>
@@ -248,6 +250,13 @@ export default {
 
       if (oldEvent && event.id === oldEvent.id) {
         return
+      }
+
+      if (this.$gtag) {
+        this.$gtag.pageview({
+          page_title: `Preview: events/${event.id}`,
+          page_path: `/preview/events/${event.id}`
+        })
       }
 
       this.scrollToEvent(event)
@@ -411,6 +420,11 @@ export default {
     },
     scrollToDate (date) {
       const formattedDate = formatDate(date)
+
+      if (this.$gtag) {
+        this.$gtag.event('go_to_date_use', { event_category: 'engagement', event_label: formattedDate })
+      }
+
       const matchingEvents = this.events.filter(event => formatDate(event.date) === formattedDate)
       if (matchingEvents.length === 1) {
         this.selectEvent(matchingEvents[0])
@@ -492,6 +506,20 @@ export default {
     },
     scrollTo (offset) {
       this.$refs.container.scrollTo({ left: this.$store.state.flipTimeline ? -offset : offset, behavior: 'smooth' })
+    },
+    openGoToDate () {
+      if (this.$gtag) {
+        this.$gtag.pageview({ page_title: 'Go To Date', page_path: '/go-to-date', page_location: '' })
+      }
+
+      this.$store.commit('openGoToDate')
+    },
+    toggleMeasurement () {
+      if (!this.$store.state.measurementActive && this.$gtag) {
+        this.$gtag.pageview({ page_title: 'Measuring', page_path: '/measurement', page_location: '' })
+      }
+
+      this.$store.commit('toggleMeasurement')
     }
   }
 }

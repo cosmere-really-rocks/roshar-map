@@ -65,7 +65,7 @@
             <router-link
               v-for="link in related[type]"
               :key="link.translationKey"
-              :to="`/${$route.params.locale}/${link.url}`"
+              :to="{ name: type, params: { locale: $route.params.locale, id: link.id } }"
               class="details__related-link"
             >
               <div class="details__related-link-icon">
@@ -150,7 +150,7 @@ export default {
   },
   computed: {
     imageSrcSet () {
-      return this.details.image !== undefined ? getEntryImageSrcSet(this.details.image.file) : undefined
+      return this.details.image !== undefined ? getEntryImageSrcSet(this.details.image.file, this.$gtag) : undefined
     },
     imageUrl () {
       return this.imageSrcSet !== undefined ? this.imageSrcSet.sources[0].url : undefined
@@ -177,11 +177,20 @@ export default {
       return result
     },
     text () {
-      if (!this.$te(`${this.baseTranslationKey}.details`, 'en') && this.$te(`${this.baseTranslationKey}.blurb`, 'en')) {
+      // Fall back from translated details to translated blurb to English details to English blurb
+      if (this.$te(`${this.baseTranslationKey}.details`)) {
+        return this.$t(`${this.baseTranslationKey}.details`)
+      }
+
+      if (this.$te(`${this.baseTranslationKey}.blurb`)) {
         return this.$t(`${this.baseTranslationKey}.blurb`)
       }
 
-      return this.$t(`${this.baseTranslationKey}.details`)
+      if (this.$te(`${this.baseTranslationKey}.details`, 'en')) {
+        return this.$t(`${this.baseTranslationKey}.details`)
+      }
+
+      return this.$t(`${this.baseTranslationKey}.blurb`)
     },
     anyRelated () {
       return Object.keys(this.related).length > 0
@@ -205,7 +214,7 @@ export default {
         let image
         if (linkDetails.image !== undefined) {
           image = {
-            backgroundImage: getEntryImageSrcSet(linkDetails.image.file).css
+            backgroundImage: getEntryImageSrcSet(linkDetails.image.file, this.$gtag).css
           }
 
           if (linkDetails.image.offset !== undefined) {
@@ -219,8 +228,8 @@ export default {
 
         return {
           type,
+          id,
           translationKey: `${type}.${id}.name`,
-          url: link,
           image,
           date: linkDetails.date,
           tieBreaker: linkDetails.tieBreaker

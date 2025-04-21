@@ -538,7 +538,10 @@
     {
         "id": "adolin-is-born",
         "date": [
-            1150
+            1150,
+            3,
+            8,
+            3
         ],
         "coordinates": {
             "x": 738.5,
@@ -2758,8 +2761,7 @@
         "related": [
             "misc/diagram",
             "characters/taravangian",
-            "locations/urithiru",
-            "related/diagram"
+            "locations/urithiru"
         ],
         "tieBreaker": 0
     },
@@ -4255,8 +4257,8 @@
         ],
         "coppermind": "Ruthar",
         "image": {
-            "file": "events/The_Queen_and_Her_Wit_by_Morby.jpg",
-            "credits": "[Morby](https://coppermind.net/wiki/Coppermind:Artists/Morby)"
+            "file": "events/AQueenandherWit_by Marie Seeberger.jpg",
+            "credits": "[Marie Seeberger](https://coppermind.net/wiki/Coppermind:Artists/Marie_Seeberger)"
         },
         "related": [
             "locations/emul",

@@ -30,13 +30,13 @@
         <MenuIcon size="1x" />
       </button>
     </div>
-    <Info :open="openedMenu === 'info'" @open-tutorial="tutorialActive = true" @close="closeMenu" />
+    <Info :open="openedMenu === 'info'" @open-tutorial="openTutorial" @close="closeMenu" />
     <Settings :open="openedMenu === 'settings'" @close="closeMenu" />
     <transition name="calendar-guide">
       <CalendarGuide v-if="$store.state.calendarGuideOpen" />
     </transition>
     <transition name="first-visit-window" appear>
-      <FirstVisitWindow v-if="ready && firstVisit" @open-tutorial="tutorialActive = true" @close="firstVisit = false" />
+      <FirstVisitWindow v-if="ready && firstVisit" @open-tutorial="openTutorial" @close="firstVisit = false" />
     </transition>
     <transition name="tutorial">
       <Tutorial v-if="ready && tutorialActive" @close="tutorialActive = false" />
@@ -65,6 +65,7 @@ import Tutorial from '@/components/Tutorial.vue'
 import FirstVisitWindow from '@/components/FirstVisitWindow.vue'
 import ErrorScreen from '@/components/ErrorScreen.vue'
 import Changelog, { VERSION as CHANGELOG_VERSION } from '@/components/Changelog.vue'
+import '@/assets/fonts/baskerville.scss'
 import '@/assets/fonts/hebrew.scss'
 import Search from '@/components/search/Search.vue'
 import { mapMutations, mapState } from 'vuex'
@@ -138,15 +139,48 @@ export default {
   methods: {
     onReady () {
       this.ready = true
+
+      if (window.localStorage.getItem('activeEvent')) {
+        this.$store.commit('selectEvent', this.$store.state.mappings.events[localStorage.getItem('activeEvent')])
+      }
+      if (window.localStorage.getItem('layersActive')) {
+        const layersActive = JSON.parse(localStorage.getItem('layersActive'))
+        Object.entries(layersActive).forEach(([layer, value]) => {
+          this.$store.commit('toggleLayer', { layer, value })
+        })
+      }
+      if (window.localStorage.getItem('filter')) {
+        this.$store.commit('updateFilter', JSON.parse(localStorage.getItem('filter')))
+      }
+
+      if (this.$gtag) {
+        this.$gtag.time({
+          name: 'load',
+          value: Math.round(performance.now()),
+          event_category: 'Map Readiness'
+        })
+      }
     },
     onError (error) {
       this.errored = true
       // eslint-disable-next-line no-console
       console.error(error)
-      this.$ga.exception(error.message ?? error)
+      if (this.$gtag) {
+        this.$gtag.exception({
+          description: error.message ?? error,
+          fatal: true
+        })
+      }
     },
     onScrubberLoaded () {
       this.mapTransitions = true
+    },
+    openTutorial () {
+      if (this.$gtag && !this.tutorialActive) {
+        this.$gtag.pageview({ page_title: 'Tutorial', page_path: '/tutorial', page_location: '' })
+      }
+
+      this.tutorialActive = true
     },
     ...mapMutations(['openMenu', 'closeMenu'])
   }
@@ -154,7 +188,6 @@ export default {
 </script>
 
 <style lang="scss">
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&display=swap');
 
 body {
